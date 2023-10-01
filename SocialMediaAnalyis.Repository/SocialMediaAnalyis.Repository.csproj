@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.23" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\SocialMediaAnalyis.Entities\SocialMediaAnalyis.Entities.csproj" />
+	  <ProjectReference Include="..\SocialMediaAnalyis.Repository.Contracts\SocialMediaAnalyis.Repository.Contracts.csproj" />
+	</ItemGroup>
+	
+	
+</Project>

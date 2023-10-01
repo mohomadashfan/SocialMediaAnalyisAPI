@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.12" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SocialMediaAnalyis.LoggerService\SocialMediaAnalyis.LoggerService.csproj" />
+    <ProjectReference Include="..\SocialMediaAnalyis.Presentation\SocialMediaAnalyis.Presentation.csproj" />
+    <ProjectReference Include="..\SocialMediaAnalyis.Repository\SocialMediaAnalyis.Repository.csproj" />
+    <ProjectReference Include="..\SocialMediaAnalyis.Service.Contracts\SocialMediaAnalyis.Service.Contracts.csproj" />
+    <ProjectReference Include="..\SocialMediaAnalyis.Service\SocialMediaAnalyis.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="internal_logs\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+	
+
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.1" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+		<PackageReference Include="JsonDiffPatch.Net" Version="2.3.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\SocialMediaAnalyis.Repository.Contracts\SocialMediaAnalyis.Repository.Contracts.csproj" />
+	  <ProjectReference Include="..\SocialMediaAnalyis.Service.Contracts\SocialMediaAnalyis.Service.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>
