@@ -2,7 +2,6 @@
 {
     public interface IServiceManager
     {
-        ISocialUsersService UsersService { get; }
         IFifaTweetService TweetService { get; }
 
     }
